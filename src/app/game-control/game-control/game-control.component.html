@@ -1,0 +1,11 @@
+<button (click)="startGenerator()">Start Generator</button>
+<button (click)="stopGenerator()">Stop Generator</button>
+
+<p>
+	Generated number: 
+	<app-even *ngIf="isOdd(generatedNumber)"></app-even>
+	<app-odd *ngIf="!isOdd(generatedNumber)"></app-odd>
+</p>
+
+<p>History:</p>
+<app-history></app-history>
